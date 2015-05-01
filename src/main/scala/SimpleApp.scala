@@ -17,6 +17,7 @@ import scala.collection.mutable.HashSet
 
 import org.apache.spark.graphx.lib.ShortestPaths
 import org.apache.spark.graphx.lib.LabelPropagation
+
 /*
 
 ~/PredictionIO/vendors/spark-1.2.0/bin/spark-submit \
@@ -73,6 +74,10 @@ object SimpleApp {
     val queryAlgo = args(3)
     val stitchNumGraph = args(4).toInt
     val stitchStrategy = args(5)
+
+    val outputFile = args(6)
+    val fileWriter = new FileWriter(outputFile, true)
+
     val jobName = s"GS-${graphPath}-$sampleType-${sampleFrac.toString()}-$queryAlgo-${stitchNumGraph.toString()}-${stitchStrategy}"
     println(jobName)
 
@@ -119,7 +124,9 @@ object SimpleApp {
         stitchStrategy,
         sampleTime,
         computeTime,
-        totalTime)
+        totalTime,
+        fileWriter)
+    fileWriter.close()
     sc.stop()
   }
 
@@ -135,7 +142,7 @@ object SimpleApp {
   def runEval[T](aggregateResult: T, groundTruth: T, numSamples: Int, 
                  sampleType: String, sampleFrac: Double, queryAlgo: String,
                  stitchStrategy: String, sampleTime: Double, computeTime: Double,
-                 totalTime: Double) = {
+                 totalTime: Double, fileWriter:FileWriter) = {
 
     queryAlgo match {
       case "pageRank" => {
@@ -144,11 +151,15 @@ object SimpleApp {
 
         var metricName = "Edit Distance"
         var metricScore = Metrics.pageRankEditMetric(truth, result)
-        println(s"$sampleType,$sampleFrac,$queryAlgo,$metricName,$metricScore,$numSamples,$stitchStrategy,$sampleTime,$computeTime,$totalTime")
+        val edString = s"$sampleType,$sampleFrac,$queryAlgo,$metricName,$metricScore,$numSamples,$stitchStrategy,$sampleTime,$computeTime,$totalTime\n"
+        println(edString)
+        fileWriter.write(edString)
 
         metricName = "Intersection"
         metricScore = Metrics.pageRankIntersectMetric(truth, result)
-        println(s"$sampleType,$sampleFrac,$queryAlgo,$metricName,$metricScore,$numSamples,$stitchStrategy,$sampleTime,$computeTime,$totalTime")
+        val intersectString = s"$sampleType,$sampleFrac,$queryAlgo,$metricName,$metricScore,$numSamples,$stitchStrategy,$sampleTime,$computeTime,$totalTime\n"
+        println(intersectString)
+        fileWriter.write(intersectString)
       }
     }
 
