@@ -1,3 +1,4 @@
+package org.dprg.graphsampling
 import java.nio.ByteBuffer
 import java.text.DateFormat._
 import java.util.{Locale, Date}
@@ -15,20 +16,16 @@ import scala.collection.mutable.{HashSet, ListBuffer}
 import scala.reflect.ClassTag
 import scala.util.Random
 
-
-
-
 object Util {
-
-
-
-
+  /*
   def createFilter(m: Int, k: Int, t: Int): GSBloomFilter = {
     var bf = new GSBloomFilter
     bf.setFilter(m, k, t)
     bf
   }
+  */
 
+  /*
   def genBloomFilter[VD, ED](g: Graph[VD, ED], m: Int, k: Int, t: Int): GSBloomFilter = {
     val bf: GSBloomFilter = g.vertices.aggregate(createFilter(m, k, t))(//new GSBloomFilter())(
       (acc,v) => {
@@ -41,6 +38,7 @@ object Util {
       })
     bf
   }
+  */
 
   def getDate(): String = {
     (new Date).toString
@@ -80,7 +78,6 @@ object Util {
 
 
   def partitionByKMeans(degrees: VertexRDD[Int]): (VertexRDD[Int], VertexRDD[Int]) = {
-    degrees.foreach{println}
     val data = degrees.map(v => Vectors.dense(v._2))
     // data.collect.foreach(println)
     val numIterations = 30

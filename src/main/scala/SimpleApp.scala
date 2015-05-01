@@ -101,8 +101,7 @@ object SimpleApp {
     val g = loadGraph(sc, queryAlgo, graphPath)
 
     val t0 = System.nanoTime()
-    val samples = getSamples(g, sampleType, sampleFrac, stitchNumGraph)
-
+    val samples = getSamples(g, sampleType, sampleFrac, stitchNumGraph, sc)
 
     val t1 = System.nanoTime()
     val aggregateResult = runQuery(samples, queryAlgo, stitchStrategy)
@@ -211,18 +210,17 @@ object SimpleApp {
   def getSamples(g: Graph[Int,Int],
     sampleType: String,
     sampleFrac: Double,
-    numSamples: Int) = {
+    numSamples: Int,
+    sc: SparkContext) = {
 
     val numList = List.range(0, numSamples)
     sampleType match {
-      /*
-      case "layered" => {
-
+      case "Layered Sample" => {
+        numList.map(x => SamplingAlgo.LayeredSample(g, sampleFrac, sc))
       }
-      */
 
       case "Edge Sample" => {
-        numList.map(x => SamplingAlgo.EdgeSample(g, sampleFrac))
+        numList.map(x => SamplingAlgo.EdgeSample(g, sampleFrac, sc))
       }
 
       case _ => {
