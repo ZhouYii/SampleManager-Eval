@@ -1,0 +1,391 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/Users/Joey/graphsampling/src/main/scala/SQRTAlgorithm.scala, /Users/Joey/graphsampling/src/main/scala/Timing.scala, /Users/Joey/graphsampling/src/main/scala/NodeSampling.scala, /Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala, /Users/Joey/graphsampling/src/main/scala/RandomJumpSampling.scala, /Users/Joey/graphsampling/src/main/scala/EdgeByVertexSampling.scala, /Users/Joey/graphsampling/src/main/scala/Metric.scala, /Users/Joey/graphsampling/src/main/scala/Metric2.scala, /Users/Joey/graphsampling/src/main/scala/BloomFilter.scala, /Users/Joey/graphsampling/src/main/scala/GenSeg.scala, /Users/Joey/graphsampling/src/main/scala/KCore.scala, /Users/Joey/graphsampling/src/main/scala/LayeredMethod.scala, /Users/Joey/graphsampling/src/main/scala/KDegenrate.scala, /Users/Joey/graphsampling/src/main/scala/DoublingAlgorithm.scala, /Users/Joey/graphsampling/src/main/scala/SimpleApp.scala, /Users/Joey/graphsampling/src/main/scala/Sampling.scala, /Users/Joey/graphsampling/src/main/scala/Helpers.scala, /Users/Joey/graphsampling/src/main/scala/DoublingPageRank.scala, /Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala, /Users/Joey/graphsampling/src/main/scala/calcNeighborSignature.scala, /Users/Joey/graphsampling/src/main/scala/RandomWalkSampling.scala, /Users/Joey/graphsampling/src/main/scala/Util.scala, /Users/Joey/graphsampling/src/main/scala/ForestFireSampling.scala, /Users/Joey/graphsampling/src/main/scala/EdgeSampling.scala, /Users/Joey/graphsampling/src/main/scala/Evaluation.scala, /Users/Joey/graphsampling/src/main/scala/MetropolisSampling.scala, /Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala, /Users/Joey/graphsampling/src/main/scala/DeltaSimRankRDD.scala, /Users/Joey/graphsampling/src/main/scala/WeightedLayeredSampling.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/Joey/graphsampling/src/main/scala/SQRTAlgorithm.scala, /Users/Joey/graphsampling/src/main/scala/Timing.scala, /Users/Joey/graphsampling/src/main/scala/NodeSampling.scala, /Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala, /Users/Joey/graphsampling/src/main/scala/RandomJumpSampling.scala, /Users/Joey/graphsampling/src/main/scala/EdgeByVertexSampling.scala, /Users/Joey/graphsampling/src/main/scala/Metric.scala, /Users/Joey/graphsampling/src/main/scala/Metric2.scala, /Users/Joey/graphsampling/src/main/scala/BloomFilter.scala, /Users/Joey/graphsampling/src/main/scala/GenSeg.scala, /Users/Joey/graphsampling/src/main/scala/KCore.scala, /Users/Joey/graphsampling/src/main/scala/LayeredMethod.scala, /Users/Joey/graphsampling/src/main/scala/KDegenrate.scala, /Users/Joey/graphsampling/src/main/scala/DoublingAlgorithm.scala, /Users/Joey/graphsampling/src/main/scala/SimpleApp.scala, /Users/Joey/graphsampling/src/main/scala/Sampling.scala, /Users/Joey/graphsampling/src/main/scala/Helpers.scala, /Users/Joey/graphsampling/src/main/scala/DoublingPageRank.scala, /Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala, /Users/Joey/graphsampling/src/main/scala/calcNeighborSignature.scala, /Users/Joey/graphsampling/src/main/scala/RandomWalkSampling.scala, /Users/Joey/graphsampling/src/main/scala/Util.scala, /Users/Joey/graphsampling/src/main/scala/ForestFireSampling.scala, /Users/Joey/graphsampling/src/main/scala/EdgeSampling.scala, /Users/Joey/graphsampling/src/main/scala/Evaluation.scala, /Users/Joey/graphsampling/src/main/scala/MetropolisSampling.scala, /Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala, /Users/Joey/graphsampling/src/main/scala/DeltaSimRankRDD.scala, /Users/Joey/graphsampling/src/main/scala/WeightedLayeredSampling.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/Joey/graphsampling/src/main/scala/SQRTAlgorithm.scala, /Users/Joey/graphsampling/src/main/scala/Timing.scala, /Users/Joey/graphsampling/src/main/scala/NodeSampling.scala, /Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala, /Users/Joey/graphsampling/src/main/scala/RandomJumpSampling.scala, /Users/Joey/graphsampling/src/main/scala/EdgeByVertexSampling.scala, /Users/Joey/graphsampling/src/main/scala/Metric.scala, /Users/Joey/graphsampling/src/main/scala/Metric2.scala, /Users/Joey/graphsampling/src/main/scala/BloomFilter.scala, /Users/Joey/graphsampling/src/main/scala/GenSeg.scala, /Users/Joey/graphsampling/src/main/scala/KCore.scala, /Users/Joey/graphsampling/src/main/scala/LayeredMethod.scala, /Users/Joey/graphsampling/src/main/scala/KDegenrate.scala, /Users/Joey/graphsampling/src/main/scala/DoublingAlgorithm.scala, /Users/Joey/graphsampling/src/main/scala/SimpleApp.scala, /Users/Joey/graphsampling/src/main/scala/Sampling.scala, /Users/Joey/graphsampling/src/main/scala/Helpers.scala, /Users/Joey/graphsampling/src/main/scala/DoublingPageRank.scala, /Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala, /Users/Joey/graphsampling/src/main/scala/calcNeighborSignature.scala, /Users/Joey/graphsampling/src/main/scala/RandomWalkSampling.scala, /Users/Joey/graphsampling/src/main/scala/Util.scala, /Users/Joey/graphsampling/src/main/scala/ForestFireSampling.scala, /Users/Joey/graphsampling/src/main/scala/EdgeSampling.scala, /Users/Joey/graphsampling/src/main/scala/Evaluation.scala, /Users/Joey/graphsampling/src/main/scala/MetropolisSampling.scala, /Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala, /Users/Joey/graphsampling/src/main/scala/DeltaSimRankRDD.scala, /Users/Joey/graphsampling/src/main/scala/WeightedLayeredSampling.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 29 sources: invalidated sources (29) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 29 Scala sources to /Users/Joey/graphsampling/src/main/scala/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 605ec47, interfacing (CompilerInterface) with Scala compiler version 2.10.4[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes:/Users/Joey/.sbt/boot/scala-2.10.4/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/Joey/graphsampling/src/main/scala/target/scala-2.10/classes[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/BloomFilter.scala:3: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.hadoop.util.bloom.BloomFilter[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/BloomFilter.scala:4: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.hadoop.util.bloom.Key[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/BloomFilter.scala:5: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.hadoop.util.hash.Hash[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/BloomFilter.scala:11: not found: type BloomFilter[0m
+[0m[[31merror[0m] [0m  @transient var filter = new BloomFilter()[0m
+[0m[[31merror[0m] [0m                              ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/BloomFilter.scala:14: not found: type BloomFilter[0m
+[0m[[31merror[0m] [0m    filter = new BloomFilter(m, k, t)[0m
+[0m[[31merror[0m] [0m                 ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/BloomFilter.scala:34: not found: type BloomFilter[0m
+[0m[[31merror[0m] [0m    filter = new BloomFilter()[0m
+[0m[[31merror[0m] [0m                 ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:1: not found: object edu[0m
+[0m[[31merror[0m] [0mimport edu.berkeley.cs.amplab.spark.indexedrdd.IndexedRDD[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:2: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.{SparkContext, SparkException}[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:3: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.graphx._[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:4: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.mllib.clustering.KMeans[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:5: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.rdd.{PairRDDFunctions, RDD}[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:6: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.mllib.linalg.Vectors[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:11: not found: type VertexId[0m
+[0m[[31merror[0m] [0mcase class CoCitationSampling(q: VertexId) extends SamplingAlgorithm{[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:13: not found: type VertexRDD[0m
+[0m[[31merror[0m] [0m  def collectNeighborIdSet[ED](graph: Graph[Int, ED], edgeDirection: EdgeDirection): VertexRDD[Set[VertexId]] = {[0m
+[0m[[31merror[0m] [0m                                                                                     ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:13: not found: type Graph[0m
+[0m[[31merror[0m] [0m  def collectNeighborIdSet[ED](graph: Graph[Int, ED], edgeDirection: EdgeDirection): VertexRDD[Set[VertexId]] = {[0m
+[0m[[31merror[0m] [0m                                      ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:13: not found: type EdgeDirection[0m
+[0m[[31merror[0m] [0m  def collectNeighborIdSet[ED](graph: Graph[Int, ED], edgeDirection: EdgeDirection): VertexRDD[Set[VertexId]] = {[0m
+[0m[[31merror[0m] [0m                                                                     ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:16: not found: value EdgeDirection[0m
+[0m[[31merror[0m] [0m      case EdgeDirection.Either =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:17: not found: type VertexId[0m
+[0m[[31merror[0m] [0m        graph.aggregateMessages[Set[VertexId]]([0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:23: not found: value EdgeDirection[0m
+[0m[[31merror[0m] [0m      case EdgeDirection.In =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:24: not found: type VertexId[0m
+[0m[[31merror[0m] [0m        graph.aggregateMessages[Set[VertexId]]([0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:27: not found: value EdgeDirection[0m
+[0m[[31merror[0m] [0m      case EdgeDirection.Out =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:28: not found: type VertexId[0m
+[0m[[31merror[0m] [0m        graph.aggregateMessages[Set[VertexId]]([0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:31: not found: value EdgeDirection[0m
+[0m[[31merror[0m] [0m      case EdgeDirection.Both =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:32: not found: type SparkException[0m
+[0m[[31merror[0m] [0m        throw new SparkException("collectEdges does not support EdgeDirection.Both. Use" +[0m
+[0m[[31merror[0m] [0m                  ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:41: not found: type Graph[0m
+[0m[[31merror[0m] [0m  def sample(graph: Graph[Int, Int], fraction: Double) : Graph[Int, Int] = {[0m
+[0m[[31merror[0m] [0m                                                         ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/Sampling.scala:1: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.graphx._[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/Sampling.scala:12: not found: type Graph[0m
+[0m[[31merror[0m] [0m  def sample(graph: Graph[Int, Int], fraction: Double) : Graph[Int, Int][0m
+[0m[[31merror[0m] [0m                                                         ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/Sampling.scala:12: not found: type Graph[0m
+[0m[[31merror[0m] [0m  def sample(graph: Graph[Int, Int], fraction: Double) : Graph[Int, Int][0m
+[0m[[31merror[0m] [0m                    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:41: not found: type Graph[0m
+[0m[[31merror[0m] [0m  def sample(graph: Graph[Int, Int], fraction: Double) : Graph[Int, Int] = {[0m
+[0m[[31merror[0m] [0m                    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:42: not found: value EdgeDirection[0m
+[0m[[31merror[0m] [0m    val neighborSets = collectNeighborIdSet(graph, EdgeDirection.Out)[0m
+[0m[[31merror[0m] [0m                                                   ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:57: not found: value Graph[0m
+[0m[[31merror[0m] [0m    Graph.fromEdges(edges, defaultValue = 1)[0m
+[0m[[31merror[0m] [0m    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:61: not found: type Graph[0m
+[0m[[31merror[0m] [0m  def sampleIntersect(graph: Graph[Int, Int]) : Graph[Int, Int] = {[0m
+[0m[[31merror[0m] [0m                                                ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:61: not found: type Graph[0m
+[0m[[31merror[0m] [0m  def sampleIntersect(graph: Graph[Int, Int]) : Graph[Int, Int] = {[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:62: not found: value EdgeDirection[0m
+[0m[[31merror[0m] [0m    val neighborSets = collectNeighborIdSet(graph, EdgeDirection.Out)[0m
+[0m[[31merror[0m] [0m                                                   ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/CoCitationSampling.scala:77: not found: value Graph[0m
+[0m[[31merror[0m] [0m    Graph.fromEdges(edges, defaultValue = 1)[0m
+[0m[[31merror[0m] [0m    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:1: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.SparkContext[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:2: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.SparkContext._[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:3: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.SparkContext._[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:4: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.graphx._[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:5: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.rdd.RDD[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:20: not found: type Edge[0m
+[0m[[31merror[0m] [0m  def binarySearchF(list: Array[Edge[Int]], target: VertexId)[0m
+[0m[[31merror[0m] [0m                                ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:20: not found: type VertexId[0m
+[0m[[31merror[0m] [0m  def binarySearchF(list: Array[Edge[Int]], target: VertexId)[0m
+[0m[[31merror[0m] [0m                                                    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:22: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : list.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def size: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from list.type to ?{def size: ?}[0m
+[0m[[31merror[0m] [0m    if (list(list.size - 1).srcId < target) return -1[0m
+[0m[[31merror[0m] [0m             ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:40: not found: type Edge[0m
+[0m[[31merror[0m] [0m  def binarySearchE(list: Array[Edge[Int]], target: VertexId)[0m
+[0m[[31merror[0m] [0m                                ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:40: not found: type VertexId[0m
+[0m[[31merror[0m] [0m  def binarySearchE(list: Array[Edge[Int]], target: VertexId)[0m
+[0m[[31merror[0m] [0m                                                    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:64: not found: type Edge[0m
+[0m[[31merror[0m] [0m                      target:VertexId) : ListBuffer[Edge[Int]] = {[0m
+[0m[[31merror[0m] [0m                                                    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:63: not found: type Edge[0m
+[0m[[31merror[0m] [0m  def accumulateEdges(e:Array[Edge[Int]],[0m
+[0m[[31merror[0m] [0m                              ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:64: not found: type VertexId[0m
+[0m[[31merror[0m] [0m                      target:VertexId) : ListBuffer[Edge[Int]] = {[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:65: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : e.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def size: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from e.type to ?{def size: ?}[0m
+[0m[[31merror[0m] [0m    val idx = binarySearchE(e, target)(0, e.size-1)[0m
+[0m[[31merror[0m] [0m                                          ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:66: not found: type Edge[0m
+[0m[[31merror[0m] [0m    var outEdges: ListBuffer[Edge[Int]] = ListBuffer()[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:72: not found: type Edge[0m
+[0m[[31merror[0m] [0m    var edge:Edge[Int] = null[0m
+[0m[[31merror[0m] [0m             ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:74: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : e.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def size: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from e.type to ?{def size: ?}[0m
+[0m[[31merror[0m] [0m    while(tIdx < e.size){[0m
+[0m[[31merror[0m] [0m                 ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:80: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : e.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def size: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from e.type to ?{def size: ?}[0m
+[0m[[31merror[0m] [0m        tIdx = e.size[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:97: not found: type Edge[0m
+[0m[[31merror[0m] [0m  def sortByDst(a:Array[Edge[Int]]): Array[Edge[Int]] = {[0m
+[0m[[31merror[0m] [0m                                           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:97: not found: type Edge[0m
+[0m[[31merror[0m] [0m  def sortByDst(a:Array[Edge[Int]]): Array[Edge[Int]] = {[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:105: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : a.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def groupBy: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from a.type to ?{def groupBy: ?}[0m
+[0m[[31merror[0m] [0m            val partitions = a.groupBy( (e:Edge[Int]) => {[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:114: not found: type Edge[0m
+[0m[[31merror[0m] [0m            var sortedAccumulator: Array[Edge[Int]] = Array()[0m
+[0m[[31merror[0m] [0m                                         ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:117: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : Array[<error>][0m
+[0m[[31merror[0m] [0m required: ?{def ++: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from Array[<error>] to ?{def ++: ?}[0m
+[0m[[31merror[0m] [0m                  sortedAccumulator = sortedAccumulator ++ partitions(c)[0m
+[0m[[31merror[0m] [0m                                      ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:138: not found: type VertexId[0m
+[0m[[31merror[0m] [0m  def numAdjacent(target:VertexId, arr:Array[Edge[Int]]) : Int = {[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:138: not found: type Edge[0m
+[0m[[31merror[0m] [0m  def numAdjacent(target:VertexId, arr:Array[Edge[Int]]) : Int = {[0m
+[0m[[31merror[0m] [0m                                             ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:139: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : arr.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def size: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from arr.type to ?{def size: ?}[0m
+[0m[[31merror[0m] [0m    val lBound = binarySearchF(arr, target)(0, arr.size - 1)[0m
+[0m[[31merror[0m] [0m                                               ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:140: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : arr.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def size: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from arr.type to ?{def size: ?}[0m
+[0m[[31merror[0m] [0m    val rCandidate = binarySearchF(arr, target + 1)(0, arr.size -1 )[0m
+[0m[[31merror[0m] [0m                                                       ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:143: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : arr.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def size: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from arr.type to ?{def size: ?}[0m
+[0m[[31merror[0m] [0m      rBound = arr.size[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:155: not found: type RDD[0m
+[0m[[31merror[0m] [0m                     srcSortedEdges:Array[Edge[Int]]) : RDD[((VertexId,VertexId), Double)] = [0m
+[0m[[31merror[0m] [0m                                                        ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:150: not found: type SparkContext[0m
+[0m[[31merror[0m] [0m  def calculateNthIter(sc:SparkContext,[0m
+[0m[[31merror[0m] [0m                          ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:152: not found: type Graph[0m
+[0m[[31merror[0m] [0m                     g:Graph[Int, Int],[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:153: not found: type RDD[0m
+[0m[[31merror[0m] [0m                     prevDelta:RDD[((VertexId,VertexId),Double)],[0m
+[0m[[31merror[0m] [0m                               ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:154: not found: type Edge[0m
+[0m[[31merror[0m] [0m                     dstSortedEdges:Array[Edge[Int]],[0m
+[0m[[31merror[0m] [0m                                          ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:155: not found: type Edge[0m
+[0m[[31merror[0m] [0m                     srcSortedEdges:Array[Edge[Int]]) : RDD[((VertexId,VertexId), Double)] = [0m
+[0m[[31merror[0m] [0m                                          ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:189: not found: type RDD[0m
+[0m[[31merror[0m] [0m                         src_sorted:Array[Edge[Int]]) : RDD[((VertexId,VertexId), Double)] = [0m
+[0m[[31merror[0m] [0m                                                        ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:185: not found: type SparkContext[0m
+[0m[[31merror[0m] [0m  def calculateFirstIter(sc:SparkContext,[0m
+[0m[[31merror[0m] [0m                            ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:187: not found: type Graph[0m
+[0m[[31merror[0m] [0m                         g:Graph[Int, Int],[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:188: not found: type Edge[0m
+[0m[[31merror[0m] [0m                         e:Array[Edge[Int]],[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:189: not found: type Edge[0m
+[0m[[31merror[0m] [0m                         src_sorted:Array[Edge[Int]]) : RDD[((VertexId,VertexId), Double)] = [0m
+[0m[[31merror[0m] [0m                                          ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:223: not found: type VertexId[0m
+[0m[[31merror[0m] [0m    def updateIter(diff:Tuple2[(VertexId,VertexId), Double]) = {[0m
+[0m[[31merror[0m] [0m                                ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:223: not found: type VertexId[0m
+[0m[[31merror[0m] [0m    def updateIter(diff:Tuple2[(VertexId,VertexId), Double]) = {[0m
+[0m[[31merror[0m] [0m                                         ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:222: not found: type RDD[0m
+[0m[[31merror[0m] [0m  def joinDelta(prevIter:Array[Double], delta:RDD[((VertexId,VertexId), Double)]) = {[0m
+[0m[[31merror[0m] [0m                                              ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:236: not found: type SparkContext[0m
+[0m[[31merror[0m] [0m  def compute(sc:SparkContext, g:Graph[Int,Int]) : Array[Double] = {[0m
+[0m[[31merror[0m] [0m                 ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:236: not found: type Graph[0m
+[0m[[31merror[0m] [0m  def compute(sc:SparkContext, g:Graph[Int,Int]) : Array[Double] = {[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/Util.scala:8: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.graphx._[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/Util.scala:213: not found: type Edge[0m
+[0m[[31merror[0m] [0m  def sortBySrc(a:Array[Edge[Int]]): Array[Edge[Int]] = {[0m
+[0m[[31merror[0m] [0m                                           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/Util.scala:213: not found: type Edge[0m
+[0m[[31merror[0m] [0m  def sortBySrc(a:Array[Edge[Int]]): Array[Edge[Int]] = {[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:263: not found: type VertexId[0m
+[0m[[31merror[0m] [0m    val hash = Map[VertexId, Long]()[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:261: not found: type Graph[0m
+[0m[[31merror[0m] [0m  def normalizeGraph(g:Graph[Int,Int]) = {[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRank.scala:290: not found: value Graph[0m
+[0m[[31merror[0m] [0m    val g2 = Graph(v,e)[0m
+[0m[[31merror[0m] [0m             ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:1: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.SparkContext[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:2: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.SparkContext._[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:3: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.SparkContext._[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:4: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.graphx._[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:5: object apache is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.rdd.RDD[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:21: not found: type Edge[0m
+[0m[[31merror[0m] [0m  def binarySearchF(list: Array[Edge[Int]], target: VertexId)[0m
+[0m[[31merror[0m] [0m                                ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:21: not found: type VertexId[0m
+[0m[[31merror[0m] [0m  def binarySearchF(list: Array[Edge[Int]], target: VertexId)[0m
+[0m[[31merror[0m] [0m                                                    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:23: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : list.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def size: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from list.type to ?{def size: ?}[0m
+[0m[[31merror[0m] [0m    if (list(list.size - 1).srcId < target) return -1[0m
+[0m[[31merror[0m] [0m             ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:41: not found: type Edge[0m
+[0m[[31merror[0m] [0m  def binarySearchE(list: Array[Edge[Int]], target: VertexId)[0m
+[0m[[31merror[0m] [0m                                ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:41: not found: type VertexId[0m
+[0m[[31merror[0m] [0m  def binarySearchE(list: Array[Edge[Int]], target: VertexId)[0m
+[0m[[31merror[0m] [0m                                                    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:65: not found: type Edge[0m
+[0m[[31merror[0m] [0m                      target:VertexId) : ListBuffer[Edge[Int]] = {[0m
+[0m[[31merror[0m] [0m                                                    ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:64: not found: type Edge[0m
+[0m[[31merror[0m] [0m  def accumulateEdges(e:Array[Edge[Int]],[0m
+[0m[[31merror[0m] [0m                              ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:65: not found: type VertexId[0m
+[0m[[31merror[0m] [0m                      target:VertexId) : ListBuffer[Edge[Int]] = {[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:66: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : e.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def size: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from e.type to ?{def size: ?}[0m
+[0m[[31merror[0m] [0m    val idx = binarySearchE(e, target)(0, e.size-1)[0m
+[0m[[31merror[0m] [0m                                          ^[0m
+[0m[[31merror[0m] [0m/Users/Joey/graphsampling/src/main/scala/DeltaSimRankLowMem.scala:67: not found: type Edge[0m
+[0m[[31merror[0m] [0m    var outEdges: ListBuffer[Edge[Int]] = ListBuffer()[0m
+[0m[[31merror[0m] [0m                             ^[0m
