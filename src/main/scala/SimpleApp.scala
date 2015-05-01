@@ -95,8 +95,17 @@ object SimpleApp {
 
     val g = loadGraph(sc, queryAlgo, graphPath)
 
+    val t0 = System.nanoTime()
     val samples = getSamples(g, sampleType, sampleFrac, stitchNumGraph)
+
+
+    val t1 = System.nanoTime()
     val aggregateResult = runQuery(samples, queryAlgo, stitchStrategy)
+    val t2 = System.nanoTime()
+
+    val sampleTime = (t1 - t0) * 0.00001
+    val computeTime = (t2 - t1) * 0.00001
+    val totalTime = (t2 - t0) * 0.00001
     val groundTruth = runQuery(List(g), queryAlgo, "None")
 
     // PageRank
@@ -107,7 +116,10 @@ object SimpleApp {
         sampleType,
         sampleFrac,
         queryAlgo,
-        stitchStrategy)
+        stitchStrategy,
+        sampleTime,
+        computeTime,
+        totalTime)
     sc.stop()
   }
 
@@ -122,7 +134,8 @@ object SimpleApp {
 
   def runEval[T](aggregateResult: T, groundTruth: T, numSamples: Int, 
                  sampleType: String, sampleFrac: Double, queryAlgo: String,
-                 stitchStrategy: String) = {
+                 stitchStrategy: String, sampleTime: Double, computeTime: Double,
+                 totalTime: Double) = {
 
     queryAlgo match {
       case "pageRank" => {
@@ -131,11 +144,11 @@ object SimpleApp {
 
         var metricName = "Edit Distance"
         var metricScore = Metrics.pageRankEditMetric(truth, result)
-        println(s"$sampleType,$sampleFrac,$queryAlgo,$metricName,$metricScore,$numSamples,$stitchStrategy")
+        println(s"$sampleType,$sampleFrac,$queryAlgo,$metricName,$metricScore,$numSamples,$stitchStrategy,$sampleTime,$computeTime,$totalTime")
 
         metricName = "Intersection"
         metricScore = Metrics.pageRankIntersectMetric(truth, result)
-        println(s"$sampleType,$sampleFrac,$queryAlgo,$metricName,$metricScore,$numSamples,$stitchStrategy")
+        println(s"$sampleType,$sampleFrac,$queryAlgo,$metricName,$metricScore,$numSamples,$stitchStrategy,$sampleTime,$computeTime,$totalTime")
       }
     }
 
@@ -173,13 +186,11 @@ object SimpleApp {
       case "connectedComponents" => {
         val result = samples.map(g => g.connectedComponents())
         result
-
         //val result = samples.map(g => ccGetNumComponents(g.connectedComponents()))
 
         // stitching can be good. if a,b are in different components in one
         // sample, and a,b are in sample component in a different sample, then
-        // you can infer a,b are in same sample
-
+        // you can infer a,b are in same sample. This strategy is expensive, however.
       }
 
     }
