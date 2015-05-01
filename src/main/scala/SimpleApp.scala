@@ -99,17 +99,20 @@ object SimpleApp {
     */
 
     val g = loadGraph(sc, queryAlgo, graphPath)
+    val split = Util.partitionByKMeans(g.degrees)
+    val sparse = split._1
+    val dense = split._2
 
     val t0 = System.nanoTime()
-    val samples = getSamples(g, sampleType, sampleFrac, stitchNumGraph, sc)
+    val samples = getSamples(g, sampleType, sampleFrac, stitchNumGraph, sparse, dense, sc)
 
     val t1 = System.nanoTime()
     val aggregateResult = runQuery(samples, queryAlgo, stitchStrategy)
     val t2 = System.nanoTime()
 
-    val sampleTime = (t1 - t0) * 0.00001
-    val computeTime = (t2 - t1) * 0.00001
-    val totalTime = (t2 - t0) * 0.00001
+    val sampleTime = (t1 - t0)/1000000000.0
+    val computeTime = (t2 - t1)/1000000000.0
+    val totalTime = (t2 - t0)/1000000000.0
     val groundTruth = runQuery(List(g), queryAlgo, "None")
 
     // PageRank
@@ -211,12 +214,14 @@ object SimpleApp {
     sampleType: String,
     sampleFrac: Double,
     numSamples: Int,
+    sparse: VertexRDD[Int],
+    dense: VertexRDD[Int],
     sc: SparkContext) = {
 
     val numList = List.range(0, numSamples)
     sampleType match {
       case "Layered Sample" => {
-        numList.map(x => SamplingAlgo.LayeredSample(g, sampleFrac, sc))
+        numList.map(x => SamplingAlgo.LayeredSample(g, sampleFrac, sc, sparse, dense))
       }
 
       case "Edge Sample" => {

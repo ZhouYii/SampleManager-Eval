@@ -23,7 +23,8 @@ object SamplingAlgo {
     Graph.fromEdges[Int, Int](sample, defaultValue=1)
   }
 
-  def LayeredSample(graph: Graph[Int, Int], fraction: Double, sc: SparkContext) 
+  def LayeredSample(graph: Graph[Int, Int], fraction: Double, sc: SparkContext, 
+                    sparse: VertexRDD[Int], dense:VertexRDD[Int])
     : Graph[Int, Int] = {
 
     // Unweighted Layer Sampling

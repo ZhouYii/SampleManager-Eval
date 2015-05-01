@@ -49,5 +49,13 @@ object Metrics {
   val intersect = (Set() ++ sortedSample) intersect (Set() ++ sortedOriginal)
   intersect.size
   }
+
+  def ConnectedComponentsFractionWrong(origValueGraph: Graph[VertexId, Int],
+                 sampleValueGraph: Graph[VertexId, Int]) : Double = {
+    val valueTuple = origValueGraph.vertices.leftJoin(sampleValueGraph.vertices)
+    {(id, correctComponent, sampleComponent) => (correctComponent, sampleComponent.getOrElse(-1))}.cache()
+    val accurateVertices = valueTuple.filter(element => element._2._1 == element._2._2).cache()
+    return 1 - (accurateVertices.count().toDouble/sampleValueGraph.vertices.count())
+  }
 }
  
