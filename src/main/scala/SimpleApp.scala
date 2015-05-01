@@ -17,6 +17,7 @@ import scala.collection.mutable.HashSet
 
 import org.apache.spark.graphx.lib.ShortestPaths
 import org.apache.spark.graphx.lib.LabelPropagation
+import org.apache.spark.graphx.lib.PageRank
 
 /*
 
@@ -190,7 +191,10 @@ object SimpleApp {
       }
 
       case "pageRank" => {
-        val results = samples.map(g => g.pageRank(0.001))
+        val results = samples.map(g => {
+            g.edges.foreach(x => {})
+            PageRank.run(g,10)
+          })
         runStitching[Graph[Double,Double]](results, queryAlgo, "None")
         // vertex, score
         // result.apply(0).vertices.foreach(println)
@@ -226,6 +230,10 @@ object SimpleApp {
 
       case "Edge Sample" => {
         numList.map(x => SamplingAlgo.EdgeSample(g, sampleFrac, sc))
+      }
+
+      case "No Sampling" => {
+        numList.map(x => g)
       }
 
       case _ => {

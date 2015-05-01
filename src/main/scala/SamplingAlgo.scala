@@ -1,6 +1,7 @@
 package org.dprg.graphsampling
 
 import org.apache.spark.rdd.RDD
+import org.apache.spark.rdd.PairRDDFunctions
 import scala.util.Random
 import org.apache.spark.graphx._
 
@@ -23,6 +24,22 @@ object SamplingAlgo {
     Graph.fromEdges[Int, Int](sample, defaultValue=1)
   }
 
+  def LayeredSample(graph: Graph[Int, Int], fraction: Double, sc: SparkContext,
+          sparse: VertexRDD[Int], dense: VertexRDD[Int]) : Graph[Int, Int] = {
+    var sample = sparse.sample(false, fraction, Random.nextLong).union(dense)
+    var samplePair = new PairRDDFunctions(sample)
+    val c = samplePair.join(
+      samplePair.join(graph.edges.map {
+        case e => (e.srcId, e.dstId)
+      }).map {
+        case (srcId, (u, dstId)) => (dstId, srcId)
+      }).map {
+      case (dstId, (u, srcId)) => Edge[Int](srcId, dstId, 1)
+    }
+    Graph[Int, Int](sample, c)
+  }
+
+  /*
   def LayeredSample(graph: Graph[Int, Int], fraction: Double, sc: SparkContext, 
                     sparse: VertexRDD[Int], dense:VertexRDD[Int])
     : Graph[Int, Int] = {
@@ -52,6 +69,7 @@ object SamplingAlgo {
     val g = Graph.fromEdges(sampleEdges, defaultValue = 1)
     g
   }
+  */
 
   def randomWalkSample(graph: Graph[Int, Int], fraction: Double, sc:SparkContext,
                     jumpThreshold: Int = 100000): Graph[Int, Int] = {
